@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      @media screen and (max-width: 990px) {
+        body{
+        overflow-x: hidden;
+      }
+       .mbl,.name{
+        flex-basis: 90%;
+       }
+       .pr,.own{
+        flex-basis: 90%;
+       }
+       .s{
+       flex-basis: 40%;
+       }
+
+      }
+
+
+
+      @media screen and (min-width: 991px) {
+        ul {
+          margin-left: 250px;
+        }
+      }
+
+
+      body{
+        overflow-x: hidden;
+      }
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .navbar {
+        background-color: rgba(37, 90, 143, 0.733);
+        /* border: 5px solid rgba(47, 100, 143, 0.733) ; */
+        box-shadow: 0 0 25px rgba(47, 100, 143, 0.733);
+        font-size: 20px;
+      }
+
+      .s1{
+        padding: 150px 70px;
+        background-color: burlywood;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+      .mbl{
+        width: 45%;
+      }
+      .cc{
+        width: 85%;
+      }
+      .name{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .bt1{
+        color: #ffff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 30px;
+        background-color: chartreuse;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .s2{
+        color: #ffff;
+        width: 100vw;
+        background-color: black;
+        padding:50px 10px;
+      }
+      .oo{
+        width: 45%;
+      }
+      .a1{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .pr{
+        width: 45%;
+      }
+      .own{
+        width: 45%;
+      }
+
+      .s3{
+        width: 100vw;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 130px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        gap: 30px;
+      }
+      .bt2{
+        padding: 10px 20px;
+        border-radius: 30px;
+        color: #ffff;
+        background-color: black;
+      }
+      .s4{
+        background-color: #333333;
+        color: #ffff;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 50px 50px;
+      }
+      .ap{
+        text-align: center;
+      }
+      .ss{
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .s{
+        width: 23%;
+      }
+      .s5{
+        padding: 50px 50px;
+        text-align: center;
+        background-color: rgb(58, 58, 192);
+      }
+     .reg{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+
+
+     }
+      .it{
+        background-color: aliceblue;
+        padding: 50px 100px;
+        letter-spacing: 2px;
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .rb{
+        padding: 10px 10px;
+        width: 150px;
+        border-radius: 30px;
+        border: none;
+        background-color: aqua;
+        position: relative;
+        top: 70px;
+      }
+      .s6{
+        background-color: aqua;
+        text-align: center;
+        padding: 50px 100px;
+      }
+      .em{
+        border: 2px solid #ffff;
+        background-color: transparent;
+        padding: 5px;
+        border-radius: 30px;
+      }
+     .sub{
+      border: none;
+      padding: 5px;
+      border-radius: 30px;
+      background-color: #ffff;
+      color: aqua;
+      font-weight: 600;
+     }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid" style="position: relative">
+        <a
+          href=""
+          class="navbar-brand"
+          style="letter-spacing: 3px; color: #ffff"
+          >APP STARTER</a
+        >
+        <button
+          style="color: #ffff"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navi"
+          id="md"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navi">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#about" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Screenshots</a>
+            </li>
+            <li class="nav-item">
+              <a href="#crsl" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link">News Letter</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="s1">
+      <div class="mbl">
+        <img class="cc" src="./home-img.png" />
+      </div>
+      <div class="name">
+        <h1><u>APP STARTER PAGE</u></h1><br>
+        <h6 style="letter-spacing: 2px; text-align: center; font-size: 20px;">
+          The optimal way to present your beautiful mobile App for <br />your
+          starup team.Let us create amazing things!
+        </h6><br>
+        <button class="bt1" >DOWNLOAD APP</button>
+      </div>
+    </div>
+
+    <div class="s2">
+        <div><h2 style="text-align: center;"><u>Welcome to New App</u></h2></div>
+        <div class="a1">
+          <div class="pr">
+            <h3>Our Mobile App Team</h3>
+            <p>APP STARTER page is provided by template chat can be used for sny site.</p>
+            <p>This is a responsive HTML CSS template designed for your mobile app pages.You can modify and use it to fit your needs.</p>
+          </div>
+          <div class="own">
+            <img class="oo" src="./team-img1.jpg">
+            <img class="oo" src="./team-img2.jpg"/>
+          </div>
+        </div>
+    </div>
+
+    <div class="s3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa accusantium minus! Mollitia aut rem cumque optio velit facilis esse consectetur non. Accusamus quaerat, eius modi perferendis doloribus at necessitatibus deserunt veniam repellendus natus odio deleniti aperiam numquam beatae itaque.</p>
+        <button class="bt2">Learn More</button>
+    </div>
+
+    <div class="s4">
+        <div class="ap">
+            <h1><u>APP SCREENSHOTS</u></h1>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque iusto odit vel? Dignissimos repellendus, repellat exercitationem tenetur nihil itaque.</P>
+        </div>
+        <div class="ss">
+            <img class="s" src="./screenshot-img1.jpg" alt="">
+            <img class="s" src="./screenshot-img2.jpg" alt="">
+            <img class="s" src="./screenshot-img3.jpg" alt="">
+            <img class="s" src="./screenshot-img4.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="s5">
+      <div class="pri">
+       <h1 style="color: #ffff;"><u>APP PRICING</u></h1>
+      </div><br>
+      <div class="reg">
+        <div class="it">
+          <h2 style="color: aqua; font-size: 35px;">$60</h2>
+          <p style="color:  rgb(58, 58, 192); font-size: 22px;">Starter</p>
+          <p>40 Users</p>
+          <p> 10gb per User</p>
+          <p>Unlimited Support</p>
+          <p>1 Year License</p>
+          <button class="rb">Register Now</button>
+        </div>
+        <div class="it">
+          <h2 style="color: aqua; font-size: 35px;">$120</h2>
+          <p style="color:  rgb(58, 58, 192); font-size: 22px;">Business</p>
+          <p>100 Users</p>
+          <p> 20gb per User</p>
+          <p>Unlimited Support</p>
+          <p>2 Year License</p>
+          <button class="rb">Register Now</button>
+        </div>
+        <div class="it">
+          <h2 style="color: aqua; font-size: 35px;">$200</h2>
+          <p style="color:  rgb(58, 58, 192); font-size: 22px;">Advanced</p>
+          <p>200 Users</p>
+          <p> 30gb per User</p>
+          <p>Unlimited Support</p>
+          <p>3 Year License</p>
+          <button class="rb">Register Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="s6">
+      <h1><u>Subscribe News Letter</u></h1><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deleniti et possimus nesciunt suscipit ipsam itaque, earum ad harum quas consequatur a iure ullam vitae neque ex nemo quod. Libero.</p>
+      <input class="em" type="email" required placeholder="Your Email here">
+      <button class="sub" type="submit">Send News Letter</button>
+    </div>
+
+  </body>
+</html>
